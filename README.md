@@ -7,7 +7,16 @@ O Trazja é uma plataforma digital de delivery que orquestra a interação entre
 
 
 ## Diagramas UML
+### Diagrama de caso de uso
+![alt text](docs/casodeuso.png)
 
+### Diagrama de sequência
+Sequência de fluxo de entrega
+![alt text](docs/sequencia.png)
+
+### Diagrama de atividade
+Diagrana de atividade fazer pedido
+![alt text](docs/atividade.png)
 
 ## Arquitetura do Sistema
 O sistema **TrazJá** foi projetado seguindo o padrão arquitetural **MVC (Model-View-Controller)**, que separa a aplicação em três camadas lógicas para facilitar a manutenção e escalabilidade:
