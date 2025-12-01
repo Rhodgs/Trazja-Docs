@@ -5,6 +5,34 @@ O Trazja é uma plataforma digital de delivery que orquestra a interação entre
 
 ## Requisitos Gerais
 
+### Requisitos Funcionais (RF)
+| ID | Descrição | Prioridade |
+|----|-----------|------------|
+| RF01 | O sistema deve permitir que o restaurante adicione novos pratos ao seu menu. | Essencial |
+| RF02 | O sistema deve permitir que o cliente monte um pedido, informe o endereço e realize o pagamento. | Essencial |
+| RF03 | O sistema deve permitir que o restaurante visualize e aceite ou recuse um novo pedido. | Essencial |
+| RF04 | O sistema deve permitir que o cliente acompanhe o status do seu pedido em tempo real. | Essencial |
+| RF05 | O sistema deve permitir que um novo cliente se cadastre na plataforma. | Essencial |
+| RF06 | O sistema deve notificar entregadores disponíveis sobre um pedido pronto para coleta. | Essencial |
+| RF07 | O sistema deve permitir que o entregador sinalize a coleta e a finalização da entrega. | Essencial |
+
+### Requisitos Não Funcionais (RNF)
+| ID | Descrição | Categoria | Prioridade |
+|----|-----------|-----------|------------|
+| RNF01 | O sistema deve processar um pagamento online (Pix ou Cartão) em até 5 segundos. | Desempenho | Essencial |
+| RNF02 | Todas as informações sensíveis do usuário (senhas, dados do cartão) devem ser criptografadas. | Segurança | Essencial |
+| RNF03 | A interface deve ser intuitiva, permitindo primeiro pedido em menos de 3 minutos. | Usabilidade | Importante |
+| RNF04 | O sistema deve estar disponível em 99,5% do tempo, especialmente em horários de pico. | Disponibilidade | Essencial |
+| RNF05 | O aplicativo deve ser compatível com as duas últimas versões de Android e iOS. | Compatibilidade | Importante |
+
+### Regras de Negócio (RN)
+| ID | Descrição |
+|----|-----------|
+| RN01 | O restaurante tem um prazo de 5 minutos para aceitar ou recusar um pedido. |
+| RN02 | O pagamento só pode ser realizado via Pix ou Cartão de Crédito/Débito. |
+| RN03 | Um entregador deve estar com status "online" para receber solicitações. |
+| RN04 | O sistema busca entregador automaticamente quando o pedido estiver "Pronto para Coleta". |
+| RN05 | O valor do frete é calculado com base na distância entre restaurante e cliente. |
 
 ## Diagramas UML
 ### Diagrama de caso de uso
